@@ -17,7 +17,7 @@ def read_students():
 def update_student(student_id, new_name):
     for student in students:
         if student["id"] == student_id:
-            student["name"] == new_name
+            student["name"] = new_name
             print("Student updated")
             return
     print("Student not found")
